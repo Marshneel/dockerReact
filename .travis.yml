@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t marshneel/dockerReact -f Dockerfile.dev .
+  - docker build -t marshneel/dockerreact -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true marshneel/dockerReact npm run test -- --coverage
+  - docker run -e CI=true marshneel/dockerreact npm run test -- --coverage
